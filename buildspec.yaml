@@ -11,7 +11,7 @@ phases:
       - echo Building the Docker image
       - docker build -t finals-repo .
       - docker 
-      - docker tag hidelarosa14/delarosa-app:latest 761018853069.dkr.ecr.us-east-1.amazonaws.com/finals-repo:latest
+      - docker tag finals-repo:latest 761018853069.dkr.ecr.us-east-1.amazonaws.com/finals-repo:latest
 
   post_build:
     commands:
