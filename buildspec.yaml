@@ -19,7 +19,7 @@ phases:
       - echo Pushing the Docker image to Amazon ECR...
       - docker push 761018853069.dkr.ecr.us-east-1.amazonaws.com/finals-repo:latest
       - echo "Build and push completed successfully!"
-      - printf '[{"name":"%s","imageUri":"%s"}]' "finals-repo" "761018853069.dkr.ecr.us-east-1.amazonaws.com/finals-repo" > imagedefinitions.json
+      - printf '[{"name":"%s","imageUri":"%s"}]' "finals-repo:latest" "761018853069.dkr.ecr.us-east-1.amazonaws.com/finals-repo" > imagedefinitions.json
 
 artifacts:
   files: imagedefinitions.json
