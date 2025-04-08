@@ -1,0 +1,6 @@
+flask  # Web framework
+gunicorn  # Production WSGI server (recommended for running Flask in production)
+boto3  # AWS SDK for Python (if interacting with AWS services)
+awscli  # AWS CLI (if needed)
+docker  # If managing Docker from Python scripts
+requests  # If making HTTP API calls
